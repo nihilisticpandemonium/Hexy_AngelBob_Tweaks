@@ -1,19 +1,20 @@
 if mods["angelsbioprocessing"] then
     if settings.startup["remove-angels-fish"].value then
-        data.raw.technology["bio-refugium-fish"].enabled = false
+        data.raw.technology["bio-refugium-fish-1"].enabled = false
+        data.raw.technology["bio-refugium-fish-2"].enabled = false
     elseif settings.startup["remove-angels-meat"].value then
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-fish", "fish-butchery-1")
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-fish", "fish-butchery-2")
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-fish", "fish-butchery-3")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-fish-1", "fish-butchery-1")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-fish-1", "fish-butchery-2")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-fish-1", "fish-butchery-3")
     end
 
     if settings.startup["remove-angels-meat"].value then
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer", "puffer-butchery-1")
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer", "puffer-butchery-2")
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer", "puffer-butchery-3")
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer", "puffer-butchery-4")
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer", "puffer-butchery-5")
-        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer", "bio-butchery")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer-1", "puffer-butchery-1")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer-1", "puffer-butchery-2")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer-1", "puffer-butchery-3")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer-1", "puffer-butchery-4")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-puffer-1", "puffer-butchery-5")
+        bobmods.lib.tech.remove_recipe_unlock("bio-refugium-fish-1", "bio-butchery")
     end
 
     if settings.startup["remove-angels-paste"].value then
@@ -21,16 +22,16 @@ if mods["angelsbioprocessing"] then
     end
 
     if settings.startup["remove-angels-alien"].value then
-        data.raw.technology["bio-biter-small"].enabled = false
-        data.raw.technology["bio-biter-medium"].enabled = false
-        data.raw.technology["bio-biter-big"].enabled = false
-        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien", "crystal-seed")
-        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien", "crystal-enhancer")
-        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien", "crystal-grindstone")
-        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien", "crystal-powder-slurry")
+        data.raw.technology["bio-refugium-biter-1"].enabled = false
+        data.raw.technology["bio-refugium-biter-2"].enabled = false
+        data.raw.technology["bio-refugium-biter-3"].enabled = false
+        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien-1", "crystal-seed")
+        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien-1", "crystal-enhancer")
+        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien-1", "crystal-grindstone")
+        bobmods.lib.tech.remove_recipe_unlock("bio-processing-alien-1", "crystal-powder-slurry")
 
         if not mods["bobenemies"] then
-            data.raw.technology["bio-processing-alien"].enabled = false
+            data.raw.technology["bio-processing-alien-1"].enabled = false
             data.raw.technology["bio-processing-paste"].enabled = false
 
             -- modify red algae

@@ -14,6 +14,8 @@ if settings.startup["tech-cleanup"].value then
     bobmods.lib.tech.add_prerequisite("oil-chemical-steel-furnace", "chemical-processing-2")
     bobmods.lib.tech.add_prerequisite("alloy-processing-2", "alloy-processing-1")
 
+    bobmods.lib.tech.remove_prerequisite("water-treatment", "electronics")
+    bobmods.lib.tech.remove_prerequisite("water-treatment", "steel-processing")
     if mods["Bob_Furnaces_Multipurpose"] or mods["MomoTweak"] then
         data.raw.technology["alloy-processing-1"].enabled = false
     else
@@ -170,9 +172,6 @@ if settings.startup["tech-cleanup"].value then
     -- if bobwarfare isn't present, this does nothing
     bobmods.lib.tech.add_prerequisite("military-3", "advanced-fuel-refining")
     bobmods.lib.tech.add_prerequisite("bob-rocket", "advanced-fuel-refining")
-
-    -- make plastic pipes depend on angel's plastic I tech
-    bobmods.lib.tech.replace_prerequisite("plastics", "angels-oil-processing", "plastic-1")
 
     -- rename zinc processing to brass processing
     data.raw.technology["zinc-processing"].localised_name = {"technology-name.brass-processing"}

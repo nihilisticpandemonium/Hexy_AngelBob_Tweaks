@@ -131,7 +131,7 @@ if settings.startup["liquid-fuel-deuterium-barrels"].value then
             tint = {r=0.5, g=0.5, b=0.5},
         },
         {
-            icon = data.raw.fluid["liquid-fuel"].icon,
+            icon = "__bobplates__/graphics/icons/liquid-fuel.png",
             icon_size = 32,
             shift = {0, 5},
             scale = 0.5
@@ -161,7 +161,7 @@ if settings.startup["liquid-fuel-deuterium-barrels"].value then
             tint = {r=0.5, g=0.5, b=0.5}
         },
         {
-            icon = data.raw.fluid["liquid-fuel"].icon,
+            icon = "__bobplates__/graphics/icons/liquid-fuel.png",
             icon_size = 32,
             scale = 0.5,
             shift = {4, -8}
@@ -184,7 +184,7 @@ if settings.startup["liquid-fuel-deuterium-barrels"].value then
             tint = {r=0.5, g=0.5, b=0.5}
         },
         {
-            icon = data.raw.fluid["liquid-fuel"].icon,
+            icon = "__bobplates__/graphics/icons/liquid-fuel.png",
             icon_size = 32,
             scale = 0.5,
             shift = {7, 8}

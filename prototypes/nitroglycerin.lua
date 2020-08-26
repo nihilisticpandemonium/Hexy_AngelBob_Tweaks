@@ -8,7 +8,7 @@ if mods["bobwarfare"] and settings.startup["new-nitroglycerin-recipe"].value the
 
     -- modify nitroglycerin recipe
     data.raw.recipe["nitroglycerin"].ingredients = {
-        {type = "fluid", name = "gas-glycerol", amount = 50},
+        {type = "fluid", name = "liquid-glycerol", amount = 50},
         {type = "fluid", name = "liquid-nitric-acid", amount = 50},
         {type = "fluid", name = "liquid-sulfuric-acid", amount = 50},
     }
@@ -20,7 +20,7 @@ if mods["bobwarfare"] and settings.startup["new-nitroglycerin-recipe"].value the
     -- modify explosives II recipe
     bobmods.lib.recipe.remove_ingredient("solid-nitroglycerin", "liquid-sulfuric-acid")
     bobmods.lib.recipe.remove_ingredient("solid-nitroglycerin", "liquid-nitric-acid")
-    bobmods.lib.recipe.remove_ingredient("solid-nitroglycerin", "gas-glycerol")
+    bobmods.lib.recipe.remove_ingredient("solid-nitroglycerin", "liquid-glycerol")
     bobmods.lib.recipe.add_ingredient("solid-nitroglycerin", {"nitroglycerin", 50})
 
     -- modify explosives II tech
