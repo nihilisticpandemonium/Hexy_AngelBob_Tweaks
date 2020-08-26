@@ -1,0 +1,75 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.17.12
+  Changes:
+    - "Make technologies require respective science pack techs" now works for red science techs if the steam science packs from Bob's Technology are enabled.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.11
+  Changes:
+    - Fixed bug where "Rubber and resin tweaks" would cause the mod to fail to load if PetrochemPlus was present and omnilib had standardized all recipes.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.10
+  Changes:
+    - "Remove ingredient count limits" option is actually uncommented now.
+    - Fixed bug where "Remove productivity on Bob's warfare intermediates" and "Move ore silos/warehouses/large chests to logistics tab" would ignore whether the box was checked or not.
+    - Fixed bug where "Remove Bob's Valves" used with Momo +(30) Science Mod made the Science Assembling Machine impossible to craft.
+    - Fixed bug where some science packs were sorted under Intermediate Products instead of the science tab when Science Cost Tweaker was present.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.9
+  Changes:
+    - Added "Remove ingredient count limits" option to remove ingredient counts from every machine. This usually will not have an impact, but just makes sense given the 0.17 changes to assembling machines, and coincidentally fixes a problem integrating this with Momo +(30) Science Mod. On by default.
+    - Fixed bug where Gas bottling technology was not researchable.
+    - Fixed bug where gas canister was still craftable if "Liquid fuel and deuterium use normal barrels" was enabled.
+    - Fixed bug where mod would crash if PetrochemPlus wasn't present but the "Liquid fuel and deuterium use normal barrels" option was enabled.
+    - PetrochemPlus's gas barreling recipes will now sort under Fluid Handling if "Remove Bob's fluids and Bob's materials tabs" is enabled.
+    - Empty canisters and gas bottles will now sort under fluid handling if "Reorganize logistics tabs" is enabled.
+    - "Resin and rubber tweaks" option should now OVERRIDE PetrochemPlus's changes to resin and rubber. If you don't want this and prefer PetrochemPlus's tweaks better, disable this option.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.8
+  Changes:
+    - Removed anti-compatibility with Omnipermute that was left in by mistake.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.7
+  Changes:
+    - Fixed issue where Bob's Flow Control pipes were unlocked by Alloy Processing 1 instead of Bronze processing when "Technology cleanup" was turned on.
+    - Fixed issue where Omnimatter would make the option "Easier lead III smelting" not work.
+    - Fixed issue where the old lithium processing recipes were not removed from the tech correctly when "Enable new lithium recipes" was enabled.
+    - Fixed "Liquid fuel and deuterium use normal barrels" new barrel localizations not being correct.
+    - Added compatibility for "Liquid fuel and deuterium use normal barrels" with PetrochemPlus.
+    - Bob's chem plants are now sorted under Petro Chemical Refining. There is no option to enable/disable this.
+    - Fixed issue where mod would crash if Momo +(30)Science Mod was present but Angel's Bio Processing wasn't present.
+    - I wanted to make Omnipermute anti-compatible with this mod and require Fluid Permutations instead, but Omnilib is anti-compatible with Fluid Permutations, so I won't be doing that. I will instead STRONGLY ADVISE you to use Fluid Permutations instead of Omnipermute if you can do so.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.6
+  Changes:
+    - Fixed bug where my "remove productivity" options froze the game while loading if there were more than 1024 recipes with productivity on them.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.5
+  Changes:
+    - Added compatibility with Momo +(30)Science Mod.
+    - Fixed bug where new deuterium, lithium, and nitroglycerin recipes didn't work with Fluid Permutations.
+    - Fixed recipe/item names being wrong when "Liquid fuel and deuterium use normal barrels" was activated.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.4
+  Changes:
+    - Added compatibility with Extended Angels.
+    - Added compatibility with Flow Control.
+    - Fixed typo in dependencies: "angelsaddons-pressure-tanks" should be "angelsaddons-pressuretanks".
+    - Added compatibility with my new mod "Angel's Smelting Complete".
+---------------------------------------------------------------------------------------------------
+Version: 0.17.3
+  Changes:
+    - Fixed migration giving error when loading a save.
+    - Fixed "Remove Bob's water bores" option not working with Sea Block.
+    - Fixed changelog not showing up in game.
+---------------------------------------------------------------------------------------------------
+Version: 0.17.2
+  Changes:
+    - Added Bob's Enemies compatibility. The "Remove Angel's alien bioprocessing recipes" and "Remove Angel's metal paste" options have been adjusted so that they should work with Bob's Enemies no matter what, and the reorganizations have taken this mod into account.
+    - Added Flow Control for Bob's Pipes compatibility.
+    - Modified "Remove Bob's water bores" option to also remove all water bore recipes. "Remove Bob's fluids and Bob's materials" should also move Bob's water bore recipes out of Bob's fluids.
+    - Mod should be compatible with Science Cost Tweaker. No actual changes were made, it just seems to work just fine with it.
+    - Fixed bug where mod would not load if "Nutrient pulp can be clarified" was enabled but Angel's Bio Processing was not present.
+    - Added Sea Block compatibility.
+      Fixed bug where "Remove Bob's Valves" option didn't work with Sea Block, since it added an unlock for Bob's Valve.
+      Fixed bug where "Chem plant tweaks" option didn't work with Sea Block, and didn't check if Bob's higher tier chem plants were enabled at all.
+    - Mods with recipes that use lithium metal as an ingredient should now use lithium chloride as an ingredient if "Enable new lithium processing recipes" is enabled.
